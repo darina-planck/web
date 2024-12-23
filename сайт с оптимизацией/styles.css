@@ -1,0 +1,96 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+.yuji-mai-regular {
+    font-family: "Yuji Mai", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+}
+.navbrand{
+    font-family: "Yuji Mai";
+    font-size: 2em;
+
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Светлая тема */
+.navbar {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #dcdcdc;
+}
+
+[data-theme="dark"] .navbar {
+    background-color: #222;
+    color: #ddd;
+}
+
+[data-theme="dark"] .nav-link {
+    color: #ddd;
+}
+
+[data-theme="dark"] .nav-link:hover {
+    color: #ffffff;
+}
+
+.theme-toggle-btn {
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+[data-theme="dark"] .theme-toggle-btn {
+    border-color: #ccc;
+    background-color: #333;
+    color: #fff;
+}
+
+.theme-toggle-btn:active {
+    transform: scale(0.95);
+    background-color: #444;
+    color: #ddd;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] .bg-light {
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] .btn-primary {
+    background-color: #043f7f;
+    color: #fff;
+    border-color: #0056b3;
+}
+img.img-fluid {
+    width: 100%; /* Чтобы сохранить адаптивность */
+    max-height: 300px; /* Задайте фиксированную высоту */
+    object-fit: cover; /* Обеспечивает аккуратное кадрирование */
+}

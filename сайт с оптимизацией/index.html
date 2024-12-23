@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Art Museum</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body data-theme="light">
+    <!-- Header -->
+    <header class="bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand navbrand" href="#">Virtual Art Museum</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#paintings">Картины</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sculptures">Скульптуры</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#modern-art">Современное искусство</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#interactive-exhibits">Интерактивные выставки</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="themeToggle" class="btn btn-outline-light theme-toggle-btn">Сменить
+                                тему</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Картины -->
+        <section id="paintings" class="mb-5">
+            <h2 class="mb-3">Картины</h2>
+            <div class="row g-3 ">
+                <div class="col-md-4 painting">
+                    <figure class="text-center">
+                        <picture>
+                            <source srcset="images/starry_night.webp" type="image/webp">
+                            <source srcset="images/starry_night.jpg" type="image/jpeg">
+                            <img src="images/starry_night.jpg" alt="Starry Night" class="img-fluid rounded">
+                        </picture>
+                        <figcaption>Звездная ночь — Винсент Ван Гог</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 painting">
+                    <figure class="text-center">
+                        <picture>
+                            <source srcset="images/Mona_Lisa.webp" type="image/webp">
+                            <source srcset="images/Mona_Lisa.jpg" type="image/jpeg">
+                            <img src="images/mona_lisa.jpg" alt="Mona Lisa" class="img-fluid rounded">
+                        </picture>
+                        <figcaption>Мона Лиза — Леонардо да Винчи</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 painting">
+                    <figure class="text-center">
+                        <picture>
+                            <source srcset="images/the_scream.webp" type="image/webp">
+                            <source srcset="images/the_scream.jpg" type="image/jpeg">
+                            <img src="images/the_scream.jpg" alt="The Scream" class="img-fluid rounded">
+                        </picture>
+                        <figcaption>Крик — Эдвард Мунк</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Скульптуры -->
+        <section id="sculptures" class="mb-5">
+            <h2 class="mb-3">Скульптуры</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <figure class="text-center">
+                        <img src="images/laocoon_and_his_sons.jpg"
+                            alt="Laocoön Group" class="img-fluid rounded">
+                        <figcaption>Лаокоон и его сыновья — Античная скульптура</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="text-center">
+                        <img src="images/michelangelo.jpg"
+                            alt="Pieta by Michelangelo" class="img-fluid rounded">
+                        <figcaption>Пьета — Микеланджело</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="text-center">
+                        <img src="images/david.webp"
+                            alt="David by Michelangelo" class="img-fluid rounded">
+                        <figcaption>Давид — Микеланджело</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Современное искусство -->
+        <section id="modern-art" class="mb-5">
+            <h2 class="mb-3">Современное искусство</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="images/abstrakcia.jpg" alt="Abstract Art 1"
+                        class="img-fluid rounded shadow">
+                    <p class="text-center mt-2">"Абстракция" - Неизвестный автор</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/graffiti.jpg"
+                        alt="Street Art" class="img-fluid rounded shadow">
+                    <p class="text-center mt-2">Граффити, Нью-Йорк</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/jivopis.webp"
+                        alt="Modern Painting" class="img-fluid rounded shadow">
+                    <p class="text-center mt-2">Современная живопись</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Интерактивные выставки -->
+        <section id="interactive-exhibits" class="mb-5">
+            <h2 class="mb-3">Интерактивные выставки</h2>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="bg-light p-4 rounded shadow interactive">
+                        <h3>Виртуальная реальность</h3>
+                        <p>Испытайте захватывающую выставку, используя VR-очки, и перенеситесь в прошлые эпохи
+                            искусства.</p>
+                        <button class="btn btn-primary">Узнать больше</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-light p-4 rounded shadow interactive">
+                        <h3>Интерактивные панели</h3>
+                        <p>Оцените картины в высоком разрешении и узнайте интересные факты с помощью сенсорных экранов.
+                        </p>
+                        <button class="btn btn-primary">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-3">
+        <div class="container text-center">
+            &copy; 2024 Virtual Art Museum
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            body.setAttribute('data-theme', newTheme);
+        });
+
+    </script>
+</body>
+
+</html>
