@@ -1,0 +1,552 @@
+:root {
+    --Black: rgb(27 28 33);
+    --White: rgb(255 255 248);
+    --Red: rgb(255 29 46);
+    --White-50: rgb(255 255 248 / 0.5);
+    --Border-20: rgb(255 255 248 / 0.2);
+    --Border-40: rgb(255 255 248 / 0.4);
+    --Green: rgb(62 136 91);
+    --Green-hover: rgb(55 114 79);
+    --Tonal: rgb(49 50 55);
+    --Tonal-hover: rgb(73 73 76);
+    --border-radius: 4px;
+    --border: 1px solid var(--Border-20);
+    --font-family-base: 'Gerbera', sans-serif;
+    --R-48: normal normal normal normal 48px/57.6px var(--font-family-base);
+    --R-24: normal normal normal normal 24px/28.8px var(--font-family-base);
+    --R-16: normal normal normal normal 16px/20.8px var(--font-family-base);
+    --H-1: normal normal normal normal 106px/95.4px var(--font-family-base);
+    --mob-page-title: normal normal normal normal 40px/44px var(--font-family-base);
+    --input-height: 48px;
+    --container-width: 1200px;
+    --transition-duration: 0.2s;
+    --input-padding: 13px 16px 14px 16px;
+    --block-width: 32.4%;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    color: #fff;
+    background: #1B1C21;
+    font-size: 17px;
+    font-family: "Gerbera";
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    min-width: 1170px;
+
+}
+header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    background-color: #1B1C21;
+}
+
+nav {
+    margin-bottom: 80px;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.icon2{
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+}
+
+nav ul li {
+    color: #fff;
+    margin: 0 24px;
+    align-content: center;
+}
+
+.contact-me {
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background: #313237;
+    padding: 10px 17px;
+    font-family: "Gerbera";
+    font-size: 17px;
+}
+
+.contact-me:hover {
+    background: #49494C;
+    cursor: pointer;
+}
+.menu-button {
+    display: none;
+    background-color: var(--Tonal);
+    width: 48px;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    width: 186px;
+    height: 48px;
+    border: none;
+    border-radius: var(--border-radius);
+    align-items: center;
+    color: var(--White);
+    font-size: var(--R-16);
+}
+
+.menu-button:hover {
+    background-color: var(--Tonal-hover);
+}
+
+.svgOpen {
+    display: none;
+
+}
+
+.svgClose {
+    display: inline;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: "Gerbera";
+    margin-bottom: 80px;
+    font-weight: 400;
+    width: 75%;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.about-myself {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.section {
+    width: 30%;
+    justify-self: start;
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+
+.section1 {
+    width: 30%;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.skills2 {
+    display: none;
+}
+
+.education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.education>.section1{
+    flex:1;
+}
+.education>.section{
+    flex:2;
+    padding: 16px;
+}
+.education2{
+    display: none;
+}
+.information p {
+    color: #8D8D8C;
+}
+
+.questions {
+    display: flex;
+    margin-bottom: 80px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.form-questions{
+    width: 70%;
+    margin-left: 5rem;
+}
+
+.input-containers {
+    display: flex;
+    gap:8px;
+}
+
+input {
+    box-sizing: border-box;
+    border: 1px solid var(--Border-20);
+    background: none;
+    color: var(--White);
+    border-radius: var(--border-radius);
+    height: 48px;
+}
+
+textarea {
+    box-sizing: border-box;
+    border: 1px solid var(--Border-20);
+    background: none;
+    color: var(--White);
+    border-radius: var(--border-radius);
+    resize: none;
+}
+
+.input-container {
+    display: inline-block;
+    width: 48.6%;
+    height: 48px;
+    margin-bottom: 26px;
+    flex: 1;
+}
+
+.input-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease all;
+}
+
+.input-content>p {
+    position: absolute;
+    font-size: 12px;
+    top: 44px;
+    margin: 0;
+    color: var(--Red);
+
+}
+
+#comment-error {
+    top: 140px;
+}
+
+.floating-label {
+    color: var(--White-50);
+    position: absolute;
+    background-color: var(--Black);
+    left: 16px;
+    top: 13px;
+    transition: 0.2s ease all;
+    box-sizing: border-box;
+}
+
+.floating-input {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 13px 16px 14px 16px;
+    color: var(--White);
+    border: 1px solid var(--Border-20);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+
+.floating-input:focus {
+    outline: none;
+}
+
+.floating-input:focus~.floating-label {
+    box-sizing: content-box;
+    padding-left: 6px;
+    padding-right: 6px;
+    top: -12px;
+    left: 10px;
+    font-size: 13px;
+}
+
+.input-container-comment {
+    display: flex;
+    width: 100%;
+    height: 144px;
+    margin-right: 8px;
+    margin-bottom: 16px;
+}
+
+.floating-input:not(:placeholder-shown)~.floating-label {
+    padding-left: 6px;
+    padding-right: 6px;
+    top: -12px;
+    left: 10px;
+    font-size: 13px;
+}
+
+.floating-input:hover {
+    border-color: var(--Border-40);
+}
+
+button.form-button {
+    background-color: var(--Green);
+}
+
+button.form-button:hover {
+    background-color: var(--Green-hover);
+}
+
+.noShow {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.red {
+    color: #FF312E;
+}
+
+.green {
+    background-color: #3E885B;
+    margin-left: 40px;
+}
+
+.green:hover {
+    background: #37724F;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+footer {
+    margin-bottom: 48px;
+    display: flex;
+    padding: 16px 0;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul li {
+    text-decoration: underline;
+}
+
+/* ---------Адаптивность----------- */
+@media (max-width: 1200px) {
+    .container {
+        box-sizing: border-box;
+        padding-inline: 16px;
+        min-width: 412px;
+        
+    }
+}
+
+@media (max-width: 700px) {
+    .container{
+        max-width: 700px;
+    }
+    h1 {
+        font-size: 40px;
+        width: 90%;
+    }
+    p {
+        font-size: 17px;
+    }
+    main {
+        gap: 64px;
+    }
+
+    header {
+        margin-bottom: 0;
+        position: sticky;
+
+    }
+    .heder-actions{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .icon2{
+        display: block;
+    }
+    .heder-menu {
+        display: none;
+    }
+    .header-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 63%;
+    }
+    #О-себе {
+        margin-bottom: 16px;
+    }
+    .section{
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    .menu-button {
+        display: flex;
+        background-color: var(--Tonal);
+        width: 48px;
+    }
+    .about-myself {
+        flex-direction: column;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .about-myself>* {
+        width: 100%;
+    }
+
+    .skills2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 16px 16px;
+        margin-top: 64px;
+    }
+    .skills {
+        display: none;
+    }
+    .education{
+        display: none;
+    }
+    .education2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+    .education2>.section{
+        width: 100%; 
+    }
+    .education2>.information>p{
+        padding-top: 16px;
+    }
+
+    .questions {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+    .questions>.section1{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .form-button {
+        width: 100%;
+    }
+    .form-questions {
+        display: flex;
+        width: 100%;
+    }
+
+    .input-container {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    input {
+        width: 100%;
+    }
+}
+
+
+@keyframes menuClose {
+    from {
+        top: 80px;
+    }
+
+    to {
+        top: 100vh;
+    }
+}
+
+@keyframes menuOpen {
+    from {
+        top: 100vh;
+    }
+
+    to {
+        top: 80px;
+    }
+}
+
+.mob-menu {
+
+    position: fixed;
+    z-index: 100;
+    top: 100vh;
+    background-color: var(--Black);
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+ul.mob-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 24px;
+    padding-top: 64px;
+    padding-left: 16px;
+    margin: 0;
+}
+
+ul.mob-menu-list li {
+    list-style-type: none;
+}
+
+.mob-menu-list a {
+    font: var(--R-48);
+    text-decoration: none;
+    color: var(--White);
+}
+
+@font-face {
+    /* // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)  */
+    font-family: "Gerbera";
+    /* // адрес шрифта и тип  */
+    src: url("fonts/Gerbera.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
