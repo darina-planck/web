@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Веб визитка</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#блок1">О себе</a></li>
+                <li><a href="#блок2">Навыки</a></li>
+                <li><a href="#блок4">Контакты</a></li>
+                <li><a href="#блок3">Образование</a></li>
+            </ul>
+        </nav>
+        <h1 id="блок1">О себе</h1>
+        <p class="text">Я - Моторина Дарья. Мне 18 лет, люблю котиков и сидеть дома.</p>
+    </div>
+    <div class="container">
+        <img class="images" src="images/my_photo.jpg" alt="моя карсивая фотка" width="600px">
+        <h2 id="блок2">Навыки</h2>
+        <table border="1">
+            <tr>
+                <th>Категория</th>
+                <th>Навыки</th>
+            </tr>
+            <tr>
+                <td>Технические навыки</td>
+                <td>HTML, CSS, JavaScript, Python, рисование</td>
+            </tr>
+            <tr>
+                <td>Управленческие навыки</td>
+                <td>-</td>
+            </tr>
+        </table>
+        <h2 id="блок3">Образование</h2>
+        <ul>
+            <li>Русская гимназия</li>
+            <li>Школа №16</li>
+            <li>IT-CUBE(Python, web)</li>
+        </ul>
+        <h2 id="блок4">Контакты</h2>
+        <p class="text">Сoциальная сеть:</p>
+        <a href="https://web.telegram.org/a/" target="_blank">Telegram</a>
+
+        <h2>Свяжитесь со мной</h2>
+        <form id="feedbackForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <button type="submit">Отправить</button>
+        </form>
+
+        <br>
+
+        <h2>Опрос</h2>
+        <form id="otherForm">
+            <label for="name">Имя:</label>
+            <input type="text" id="otherName" name="name"><br><br>
+
+            <label for="age">Возраст:</label>
+            <input type="text" id="otherAge" name="age"><br><br>
+
+
+            <label for="gender">Пол:</label>
+            <input type="radio" id="gender" name="gender" value="Мужской">
+            <label for="gender">М</label>
+
+            <input type="radio" id="gender2" name="gender" value="Женский" checked>
+            <label for="gender2">Ж</label><br><br>
+
+
+            <label for="interests">Интересы:</label><br>
+
+            <div class="interest">
+                <label>
+                    <input type="checkbox" class="interests" name="interests">
+                     <span>Спорт</span>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" class="interests" name="interests">
+                    <span>Музыка</span>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" class="interests" name="interests">
+                    <span>Кино</span>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" class="interests" name="interests">
+                    <span>Рисование</span>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" class="interests" name="interests">
+                    <span>Программирование</span>
+                </label>
+                <br>
+            </div>
+
+            <br>
+            <button class="buttonAddInterests">Добавить интерес</button><br><br>
+
+            <div class="comment">
+                <label for="message">Комментарий:</label><br>
+                <textarea id="message" name="message" class="message" maxlength="200" rows="5"></textarea>
+                <span class="counter-text">
+                    <span class="counter-text__current">0</span>
+                    /
+                    <span class="counter-text__total">200</span>
+                </span>
+
+            </div>
+            <br><br>
+
+            <button type="submit" class="submit">Отправить</button>
+        </form>
+
+        <h2>Ваш ответ</h2>
+        <div class="text-field" id="printBlock">
+        </div>
+    </div>
+
+
+    <script src="js.js"></script>
+</body>
+
+</html>
