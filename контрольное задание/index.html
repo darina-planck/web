@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-магазин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Онлайн-магазин Дарья</h1>
+        <input type="text" id="search" placeholder="Поиск товаров..." />
+        <select id="categoryFilter">
+            <option value="all">Все категории</option>
+            <option value="electronics">Электроника</option>
+            <option value="clothing">Одежда</option>
+            <option value="accessories">Аксессуары</option>
+        </select>
+    </header>
+    <div class="container">
+        <main>
+            <section id="productList"></section>
+            <aside id="cart">
+                <h2>Корзина</h2>
+                <ul id="cartItems"></ul>
+                <p id="totalPrice">Общая стоимость: 0 ₽</p>
+            </aside>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
