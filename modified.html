@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Сервис с Котами</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div>
+        <!-- Панель навигации -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid navbar-expand-lg bg-dark fixed-top">
+                <a class="navbar-brand text-light" href="#">VPN Сервис</a>
+                <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">Переключить
+                    навигацию</button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" aria-current="page" href="#about">О VPN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#servers">Серверы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" href="#features">Особенности</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#vpn-speed">Шифрование</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#user-reviews">Отзывы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary" href="#contact">Контакты</a>
+                        </li class="nav-item">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Главная секция -->
+        <header class="text-center py-3 mt-5">
+            <div>
+                <h1 class="fw-light">Самый продвинутый VPN. И многое другое.</h1>
+                <p class="fw-lighter">Обеспечьте свою конфиденциальность, защитите свои данные и безопасно подключайтесь
+                    к интернету откуда
+                    угодно.</p>
+                <a class="btn btn-primary btn-lg" href="#">Начать</a>
+            </div>
+        </header>
+
+        <!-- Секция с каруселью -->
+        <section id="features" class="container-sm mb-sm-5 mb-5">
+            <h2 class="mt-sm-5 mt-5 mb-sm-3 mb-3 text-center">Почему выбирают наш VPN?</h2>
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div>
+                            <img src="https://cdnn11.img.sputnik.by/img/104078/98/1040789816_323:0:1599:1276_1920x0_80_0_0_69ce9e6a3ec4aae781eb07e0af854f8d.jpg"
+                                class="d-block w-100 rounded"
+                                style="height: 300px; object-fit: cover; object-position: top;" alt="Кот 1" />
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Защита конфиденциальности</h5>
+                            <p> Защитите ваше интернет-соединение с военным уровнем шифрования.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div>
+                            <img src="https://zoographia.ru/upload/iblock/8cc/cnk1e1veyrtiyhnt7zpjlez179r7hnim.jpg"
+                                class="d-block w-100 rounded"
+                                style="height: 300px; object-fit: cover; object-position: top;" alt="Кот 2" />
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Доступ из любой точки</h5>
+                            <p> Подключайтесь к любимым сайтам и приложениям безопасно из любого
+                                места. </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span> </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span> <span
+                        class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Секция с таблицей серверов VPN -->
+        <section id="servers" class="text-center bg-body-tertiary mb-5 pb-5">
+            <div  class="container-sm">
+                <h2>Доступные VPN-серверы</h2>
+                <table class="table table-bordered align-middle ">
+                    <thead>
+                        <tr>
+                            <th class="text-light bg-dark">Регион</th>
+                            <th class="text-light bg-dark">Доступные страны</th>
+                            <th class="text-light bg-dark">Нагрузка сервера</th>
+                            <th class="text-light bg-dark">Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Северная Америка</td>
+                            <td>США, Канада, Мексика</td>
+                            <td>
+                                <div class="progress bar">
+                                    <div style="width: 30%; background-color: #198754; color: #fff;">30%</div>
+                                </div>
+                            </td>
+                            <td><a class="btn btn-outline-primary" href="#">Подключиться</a></td>
+                        </tr>
+                        <tr>
+                            <td>Европа</td>
+                            <td>Великобритания, Германия, Франция</td>
+                            <td>
+                                <div class="progress bar">
+                                    <div style="width: 60%; background-color: #FFC107; color: #fff;">60%</div>
+                                </div>
+                            </td>
+                            <td><a class="btn btn-outline-primary" href="#">Подключиться</a></td>
+                        </tr>
+                        <tr>
+                            <td>Азия</td>
+                            <td>Япония, Южная Корея, Китай</td>
+                            <td>
+                                <div class="progress bar">
+                                    <div style="width: 85%; background-color: #DC3545; color: #fff;">85%</div>
+                                </div>
+                            </td>
+                            <td><a class="btn btn-outline-primary" href="#">Подключиться</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Секция настройки уровня шифрования -->
+        <section id="vpn-speed" class="text-center py-3 container-sm">
+            <div>
+                <h2>Настройка уровня шифрования VPN</h2>
+                <input type="range" min="128" max="256" step="32" class="form-range" id="vpnEncryptionSlider">
+                <p id="vpnEncryptionValue">Шифрование: 192-bit</p>
+            </div>
+        </section>
+
+        <!-- Отзывы пользователей -->
+        <section id="user-reviews"  class="container-sm">
+            <div class="container text-center py-5">
+                <h2>Отзывы пользователей</h2>
+                <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active mb-0">
+                            <blockquote class="blockquote">
+                                <p class="">"Лучший VPN, который я использовал. Надежная защита и отличная скорость!"
+                                </p>
+                                <footer class="blockquote-footer">Иван Иванов</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote">
+                            <p class="">"Отличная служба поддержки, помогли быстро настроить VPN."</p>
+                            <footer class="blockquote-footer">Мария Петрова</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote">
+                            <p class="">"Я пользуюсь этим VPN каждый день и очень доволен."</p>
+                            <footer class="blockquote-footer">Алексей Смирнов</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Контакты -->
+        <section id="contact" class="text-center mt-5 container-sm">
+            <div>
+                <h2>Контакты</h2>
+                <p>Свяжитесь с нами для получения дополнительной информации или поддержки.</p>
+                <form>
+
+                    <div class="form-floating mb-3">
+                        <input type="name" class="form-control was-validated" id="floatingInput" placeholder="Ваше имя"
+                            required>
+                        <label for="floatingInput">Имя</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control was-validated" id="floatingInput" placeholder="Ваш email">
+                        <label for="floatingInput">Email</label>
+                    </div>
+
+                    <div class="form-floating">
+                        <textarea class="form-control was-validated" placeholder="Ваше сообщение"
+                            id="floatingTextarea2" style="height: 100px" id="contactMessage" required></textarea>
+                        <label for="floatingTextarea2">Сообщение</label>
+                    </div>
+
+                    <button class="btn btn-primary my-3" type="submit">Отправить</button>
+                </form>
+            </div>  
+        </section>
+
+        <footer class="text-center py-3 text-light bg-dark mt-3">
+            <div class="container-sm">
+                <p>© 2024 VPN Сервис</p>
+            </div>
+        </footer>
+    </div>
+    <!-- Скрипт для слайдера -->
+    <script>
+        document.getElementById('vpnEncryptionSlider').addEventListener('input', function () {
+            document.getElementById('vpnEncryptionValue').innerText = 'Шифрование: ' + this.value + '-bit';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
